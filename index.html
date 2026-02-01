@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>捜査本部ポータル - きさらぎ町警察</title>
+  <style>
+    body { background-color: #0d1117; color: #e6edf3; font-family: "Helvetica Neue", Arial, sans-serif; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .portal-container { max-width: 800px; width: 90%; text-align: center; padding: 40px; background: #161b22; border: 1px solid #30363d; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+    
+    h1 { font-size: 1.8em; margin-bottom: 10px; color: #f85149; letter-spacing: 2px; }
+    .subtitle { color: #8b949e; margin-bottom: 40px; font-size: 0.9em; border-bottom: 1px solid #30363d; padding-bottom: 20px; }
+
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    
+    .menu-card { 
+      background: #21262d; border: 1px solid #30363d; border-radius: 12px; padding: 20px; 
+      text-align: left; cursor: pointer; transition: 0.2s; display: flex; flex-direction: column;
+    }
+    .menu-card:hover { border-color: #58a6ff; background: #262c36; transform: translateY(-3px); }
+    
+    .card-title { font-weight: bold; font-size: 1.1em; color: #58a6ff; margin-bottom: 8px; display: flex; align-items: center; }
+    .card-title::before { content: "▶"; margin-right: 10px; font-size: 0.8em; }
+    .card-desc { font-size: 0.85em; color: #adbac7; line-height: 1.5; }
+
+    .footer { margin-top: 40px; font-size: 0.75em; color: #484f58; }
+    .alert-banner { background: #3e2b14; color: #f0883e; padding: 10px; border-radius: 6px; font-size: 0.8em; margin-bottom: 25px; border: 1px solid #f0883e; }
+  </style>
+</head>
+<body>
+
+  <div class="portal-container">
+    <h1>きさらぎ町警察本部 捜査支援システム</h1>
+    <div class="subtitle">SEIREI CITY POLICE DEPT. - INTERNAL ACCESS ONLY</div>
+
+    <div class="alert-banner">
+      ⚠️ 警告：本システムは認可された捜査員のみ利用可能です。情報の外部流出は厳禁とします。
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-card" onclick="location.href='https://ayayume0206.github.io/ai_sns/'">
+        <div class="card-title">SNS投稿アーカイブ</div>
+        <div class="card-desc">関係者の過去の投稿、削除されたポストの断片を閲覧します。住民の不審な動きを監視してください。</div>
+      </div>
+
+      <div class="menu-card" onclick="location.href='https://ayayume0206.github.io/security_camera/'">
+        <div class="card-title">防犯カメラ閲覧アーカイブ</div>
+        <div class="card-desc">町内に設置された防犯カメラ（地点1〜8）の静止画記録を照会します。事件当日のアリバイ確認に有効です。</div>
+      </div>
+
+      <div class="menu-card" onclick="location.href='https://ayayume0206.github.io/investigation/'">
+        <div class="card-title">総合管理コンソール</div>
+        <div class="card-desc">SNSアカウントへの開示請求、および重要参考人の事情聴取を行います。証拠を突きつけ、自白を引き出してください。</div>
+      </div>
+
+      <div class="menu-card" onclick="location.href='https://ayayume0206.github.io/ai_guide/'">
+        <div class="card-title">捜査支援専門官チャット</div>
+        <div class="card-desc">本部の専門官へ解析依頼を出します。手詰まりの際、証拠IDを送信することでヒントが得られます。</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 Kisaragi-machi Police Department. All Rights Reserved.
+    </div>
+  </div>
+
+</body>
+</html>
