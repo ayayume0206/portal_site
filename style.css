@@ -1,0 +1,179 @@
+/* --- 捜査支援システム 専用スタイル --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d1117;
+  color: #e6edf3;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.portal-container {
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  padding: 40px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px; /* 丸みを抑えて硬い印象に */
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+}
+
+/* ヘッダー周り */
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #f85149; /* 警告色に近い赤 */
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+.subtitle {
+  color: #8b949e;
+  margin-bottom: 40px;
+  font-size: 0.85em;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.alert-banner {
+  background: #3e2b14;
+  color: #f0883e;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  margin-bottom: 25px;
+  border: 1px solid #f0883e;
+  text-align: left;
+}
+
+/* 認証フォーム */
+.registration-form {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  padding: 30px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 0.8em;
+  color: #8b949e;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1em;
+}
+
+input:focus, select:focus {
+  border-color: #58a6ff;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background: #238636;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background: #2ea043;
+}
+
+/* 認証後のユーザー情報エリア */
+.user-info {
+  color: #58a6ff;
+  font-size: 0.95em;
+  margin-bottom: 25px;
+  display: none;
+  text-align: left;
+  background: #0d1117;
+  padding: 20px;
+  border-left: 5px solid #58a6ff;
+  line-height: 1.6;
+}
+
+/* メニューカード設定 */
+.menu-grid {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  padding: 24px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-card:hover {
+  border-color: #58a6ff;
+  background: #262c36;
+  transform: scale(1.02);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.15em;
+  color: #58a6ff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card-title::before {
+  content: "■";
+  margin-right: 12px;
+  font-size: 0.7em;
+  color: #f85149;
+}
+
+.card-desc {
+  font-size: 0.85em;
+  color: #adbac7;
+  line-height: 1.6;
+}
+
+/* フッター */
+.footer {
+  margin-top: 50px;
+  font-size: 0.75em;
+  color: #484f58;
+  border-top: 1px solid #30363d;
+  padding-top: 20px;
+}
